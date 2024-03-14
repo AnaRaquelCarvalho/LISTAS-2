@@ -16,7 +16,6 @@ while True:
     resposta = str(input('\nQuer continuar? [S/N]  ')).strip().upper()[0]
     if resposta in 'nN':
         break    
-    print('')
     print('-='*15)
 maior = max(peso)
 menor = min(peso)
@@ -25,3 +24,10 @@ print('\nMaior peso: {}. É o peso de:'.format(maior), end = ' ')
 for p in pessoas:
     if p[1] == maior:
         print('[{}] '.format(p[0]),end = '')
+print('\nMenor peso: {}. É o peso de:'.format(menor), end = ' ')
+for p in pessoas:
+    if menor == p[1]:
+        print('[{}] '.format(p[0]), end = '')
+        print('')
+print('\n','-='*15)        
+      
