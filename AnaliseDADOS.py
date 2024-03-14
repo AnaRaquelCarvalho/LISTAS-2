@@ -1,3 +1,4 @@
+
 print('-='*15)
 print('{:^30}'.format('LISTA E ANÁLISE DE DADOS'))
 print('-='*15)
@@ -24,9 +25,3 @@ print('\nMaior peso: {}. É o peso de:'.format(maior), end = ' ')
 for p in pessoas:
     if p[1] == maior:
         print('[{}] '.format(p[0]),end = '')
-print('\nMenor peso: {}. É o peso de:'.format(menor), end = ' ')
-for p in pessoas:
-    if menor == p[1]:
-        print('[{}] '.format(p[0]), end = '')
-print('\n','-='*15)        
- 
