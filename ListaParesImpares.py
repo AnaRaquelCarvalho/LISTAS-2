@@ -4,6 +4,7 @@ print('-='*32)
 numeros = []
 pares = []
 impares = []
+cont = 0
 for valores in range(1,8):
     numeros.append(int(input(f'Digite {valores}º valor: ')))
     numeros.sort()
